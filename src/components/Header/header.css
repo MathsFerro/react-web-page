@@ -37,7 +37,7 @@ section.container-header nav ul li a {
     padding: 21px;
     color: black;
     transition: .2s;
-    opacity: .6;
+
 }
 section.container-header nav ul li a:hover {
     text-decoration: none;
@@ -50,3 +50,58 @@ section.container-header nav ul li a:hover {
     background-color: rgba(150,0,0,.7);
 }
 
+.logo-header::before{
+    content: '\f121';
+    font-family: 'fontAwesome';
+    font-size: 30px;
+}
+
+@media screen and (max-width:720px){
+    nav.main-nav{
+        display: none;
+    }
+
+    .menu-toggle{
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }
+
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        font-size: 30px;
+    }
+    .menu-toggle.active::before{
+        content: '\f00d';
+        font-family: fontAwesome;
+        font-size: 30px;
+    }
+
+    header.main-header.active .logo-header{
+        display: none;
+    }
+
+    header.main-header.active section.container-header,
+    header.main-header.active nav,
+    header.main-header.active nav ul{
+
+        display: block;
+    }
+
+    header.main-header.active{
+        background-color: rgba(255,255,255, .98);
+        height: auto;
+    }
+    header.main-header.active nav ul li a{
+        display: block;
+        margin: 0;
+        width: 80%;
+    }
+
+
+
+}

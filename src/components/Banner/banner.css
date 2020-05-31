@@ -1,6 +1,7 @@
 .imgcarousel1{
     background-image: url('./images/p1.jpg');
-    background-position: center;
+    background-position: bottom;
+    background-position-y: -300px;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -8,7 +9,8 @@
 }
 .imgcarousel2{
     background-image: url('./images/p2.jpg');
-    background-position: center;
+    background-position: bottom;
+    background-position-y: -300px;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -16,7 +18,8 @@
 }
 .imgcarousel3{
     background-image: url('./images/p3.jpg');
-    background-position: center;
+    background-position: bottom;
+    background-position-y: -300px;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
